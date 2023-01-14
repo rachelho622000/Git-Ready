@@ -1,0 +1,56 @@
+#Budget Selection
+food_budget = float(input("Please set your Food budget: "))
+entertainment_budget = float(input("Please set your Entertainment budget: "))
+transportation_budget = float(input("Please set your Transportation budget: "))
+
+Food_total = 0.0
+Entertainment_total = 0.0
+Transportation_total = 0.0
+Total_Spending = 0.0
+purchase_amount = 1
+
+while purchase_amount != 0:  
+  purchase_amount = float(input("Please enter your purchase amount: "))
+  if purchase_amount == 0:
+    break
+  purchase_category= str(input("What is your purchase category: Food, Entertainment, or Transporation? "))
+  if purchase_category == "Food":
+    Food_total = purchase_amount + Food_total
+  if purchase_category == "Entertainment":
+    Entertainment_total = purchase_amount + Entertainment_total
+  if purchase_category == "Transportation":
+    Transportation_total = purchase_amount + Transportation_total
+  
+
+print("thank you for inputting all your purchases!")
+
+Total_Spending = Food_total+Entertainment_total+Transportation_total
+
+print("Your total spending is " + str(Total_Spending))
+
+print("Your total Transporation spending is " + str(Transportation_total))
+
+#Total Food budget 
+print("Your total Food spending is " + str(Food_total))
+if Food_total > food_budget:
+  print("You are over food budget by " + str(Food_total-food_budget))
+
+if Food_total < food_budget:
+   print ("You are under food budget by " + str(food_budget-Food_total))
+
+#Total Entertainment budget
+print("Your total Entertainment spending is " + str(Entertainment_total))
+if Entertainment_total > entertainment_budget:
+  print("You are over entertainment budget by " + str(Entertainment_total-entertainment_budget))
+
+if Entertainment_total < entertainment_budget:
+  print("You are under entertainment budget by " + str(entertainment_budget-Entertainment_total))
+
+#Total Transportation budget 
+print("Your total Transporation spending is " + str(Transportation_total))
+if Transportation_total > transportation_budget:
+  print("You are over food budget by " + str(Transportation_total-transportation_budget))
+
+if Transportation_total < transportation_budget:
+  print("You are under transportation budget by " +
+str(transportation_budget-Transportation_total))
