@@ -1,2 +1,6 @@
 # Git-Ready
-SheHack Challenge 1
+#Helen Phan <br>
+##Second Year Occupational Therapy <br>
+- I've done improv classes <br>
+- I've eaten a frog <br>
+- I can swim <br>
